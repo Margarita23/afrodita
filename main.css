@@ -6,13 +6,18 @@
 @import url('/blocks/header.css');
 @import url('/blocks/container.css');
 @import url('/blocks/menu.css');
+@import url('/blocks/contact.css');
+@import url('/blocks/pagination.css');
 @import url('/blocks/benefits.css');
 @import url('/blocks/news.css');
 @import url('/blocks/footer.css');
+@import url('/blocks/bread-crumbs.css');
 
 @import url('/index.css');
 @import url('/feed.css');
 
 @import url('/blocks/feed-page/feed-content.css');
 @import url('/blocks/feed-page/additional-info.css');
-@import url('/blocks/feed-page/add-feed.css')
+@import url('/blocks/feed-page/add-feed.css');
+
+@import url('/blocks/service/service.css');

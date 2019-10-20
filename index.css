@@ -4,35 +4,6 @@
     font-family: 'GoraFree', sans-serif;
 }
 
-.contact {
-    display: inline-block;
-}
-
-.contact a {
-    display: block;
-    text-align: right;
-}
-
-.contact__phone {
-    font-size: 21px;
-    font-family: "Open Sans";
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-.contact__schedule {
-    font-size: 14px;
-    font-family: "Open Sans";
-    color: rgba(248, 149, 19, 0.702);
-    text-decoration: underline;
-    line-height: 1.42;
-}
-
-.contact__schedule:hover {
-    color: #efdccd;
-}
-
 .banner {
     text-align: center;
     margin-bottom: 58px;

@@ -1,6 +1,8 @@
 .add-feed {
     background-color: #f5f5f5;
-    padding: 50px 70px;
+    padding: 50px 7%;
+    margin: 0px auto 60px;
+    max-width: 700px;
 }
 
 .add-feed__title {
@@ -11,3 +13,78 @@
     line-height: 0.776;
     margin-bottom: 25px;
 }
+
+.form__row {
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.form-row {
+    margin: 0px;
+}
+
+.form__block {
+    margin-left: 24px;
+    flex: 1;
+}
+
+.form__block:first-child {
+    margin: 0px;
+}
+
+.form__block-title {
+    margin-bottom: 7px;
+    font-size: 14px;
+    font-family: "Open Sans";
+    font-weight: lighter;
+    color: rgb(34, 31, 31);
+}
+
+.form__input {
+    width: 100%;
+    background: #fff;
+    font-size: 14px;
+    font-family: "Open Sans";
+    border-radius: 3px;
+    padding: 16px 10px;
+    outline: none;
+    border: 1px solid transparent;
+}
+
+.form__input:placeholder {
+    color: rgba(34, 31, 31, 0.502);
+}
+
+.form__input:focus {
+    border-color: #f89513;
+}
+
+.form__input--textarea {
+    min-height: 70px;
+    resize: vertical;
+}
+
+.form__radios {
+    font-weight: lighter;
+    font-size: 14px;
+    font-family: "Open Sans";
+}
+
+.form__button {
+    margin-left: auto;
+    padding:18px 20px;
+    font-size: 12px;
+    font-family: "Open Sans";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: rgb(28, 31, 29);
+    border-radius: 3px;
+    min-width: 125px;
+    border: none;
+}
+
+.form__button:hover {
+    background: #f89513;
+}
+
