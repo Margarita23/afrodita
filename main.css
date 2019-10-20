@@ -1,5 +1,18 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,700&display=swap');
-
 @import url('./normalize.css');
-@import url('./base.css');
-@import url('./index.css');
+@import url('/blocks/layout/fonts.css');
+@import url('/blocks/layout/base.css');
+
+@import url('/blocks/wrapper.css');
+@import url('/blocks/header.css');
+@import url('/blocks/container.css');
+@import url('/blocks/menu.css');
+@import url('/blocks/benefits.css');
+@import url('/blocks/news.css');
+@import url('/blocks/footer.css');
+
+@import url('/index.css');
+@import url('/feed.css');
+
+@import url('/blocks/feed-page/feed-content.css');
+@import url('/blocks/feed-page/additional-info.css');
+@import url('/blocks/feed-page/add-feed.css')

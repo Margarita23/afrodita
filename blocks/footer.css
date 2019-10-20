@@ -1,0 +1,84 @@
+/* FOOTER */
+footer {
+    background-color: #131415;
+    color: white;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 20px;
+    align-items: center;
+}
+
+.info {
+    max-width: 250px;
+}
+
+.info p {
+    font-size: 14px;
+    font-family: "Open Sans";
+    color: rgb(255, 255, 255);
+    line-height: 1.286;
+    margin: 14px 0px 0px 0px;
+}
+
+.info a {
+    color: inherit;
+}
+
+.info__company {
+    font-weight: bold;
+}
+
+.info__author {
+    font-weight: bold;
+}
+
+.footer__logo {
+    color: rgb(248, 149, 19);
+    font-family: 'GoraFree', sans-serif;
+}
+
+.social-networks__text {
+    font-size: 14px;
+    font-family: "Open Sans";
+    font-weight: bold;
+    margin-bottom: 11px;
+}
+
+.social-networks__list {
+    display: flex;
+    width: inherit;
+    justify-content: space-between;
+}
+
+.social-networks__item {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.social-networks__item.vk {
+    background: #d0d0d0 url(/assets/images/footer-social-links/vk.png) no-repeat center center;
+}
+
+.social-networks__item.fb {
+    background: #d0d0d0 url(/assets/images/footer-social-links/fb.png) no-repeat center center;
+}
+
+.social-networks__item.google {
+    background: #d0d0d0 url(/assets/images/footer-social-links/google.png) no-repeat center center;
+}
+
+.social-networks__item.twitter {
+    background: #d0d0d0 url(/assets/images/footer-social-links/twitter.png) no-repeat center center;
+}
+
+.social-networks__item.mail {
+    background: #d0d0d0 url(/assets/images/footer-social-links/mail.png) no-repeat center center;
+}
+
+.social-networks__item:hover {
+    background-color: #f89513;
+}

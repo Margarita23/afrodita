@@ -1,0 +1,124 @@
+.news__title {
+    font-size: 49px;
+    font-family: "Open Sans";
+    color: rgb(34, 31, 31);
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.news__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-list__item {
+    display: flex;
+    margin: 0px 20px 30px 0px;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+    border-bottom: 2px solid rgb(245, 245, 245);
+}
+
+.content-list__item:last-child {
+    border: none;
+}
+
+.content-list__avatar {
+    width: 160px;
+    height: 160px;
+    margin-left: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.content-list__image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%
+}
+
+.content-list__desc h6 {
+    font-weight: lighter;
+    color: rgb(101, 100, 100);
+}
+
+.content-list__desc h5 {
+    font-size: 16px;
+}
+
+.content-list__desc {
+    margin: 0px 0px 0px 20px;
+    font-size: 14px;
+    font-family: "Roboto";
+    line-height: 1.5;
+    max-width: 620px;
+    color: #221f1f;
+}
+
+
+.news__top--text, .news__top--grey {
+    font-size: 12px;
+    font-family: "Open Sans";
+    color: rgb(34, 31, 31);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.75;
+}
+
+.news__top--grey {
+    color: #656464;
+    margin-bottom: 22px;
+}
+
+.top-list__item {
+    margin-right: 18px;
+    margin-bottom: 11px;
+}
+
+/* NEWS PAGINATION */
+.pagination {
+    color: #656464;
+    text-align: center;
+    margin-bottom: 66px;
+}
+
+.pagination * {
+    display: inline-block;
+    color: #221f1f;
+}
+
+.pagination-list {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 170px;
+}
+
+.pagination__item a {
+    width: 26px;
+    line-height: 26px;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.pagination__item a:active {
+    background-color: rgb(39, 39, 62);
+    color: rgb(255, 255, 255);
+}
+
+.pagination--back {
+    vertical-align: middle;
+    height: 15px;
+    width: 15px;
+    margin: 0px 15px;
+    background: url(/assets/images/pagination/vector-back.png) no-repeat center center;
+}
+
+.pagination--forward {
+    vertical-align: middle;
+    height: 15px;
+    width: 15px;
+    margin-left: 15px;
+    background: url(/assets/images/pagination/vector-forward.png) no-repeat center center;
+}

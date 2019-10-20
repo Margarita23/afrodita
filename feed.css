@@ -1,0 +1,41 @@
+.bread-crumbs {
+    display: flex;
+    text-align: left;
+    margin-bottom: 26px;
+}
+
+.bread-crumbs__link{
+    color: rgba(248, 149, 19, 0.8);
+    text-decoration: underline;
+    font-size: 14px;
+    font-family: "Open Sans";
+    font-style: italic;
+    line-height: 1.286;
+}
+
+.bread-crumbs__link:after {
+    content: "/";
+    display: inline-block;
+    margin: 0px 4px;
+    color: #656464;
+}
+
+.bread-crumbs__item:last-child .bread-crumbs__link{
+    color: #656464;
+}
+
+.bread-crumbs__item:last-child a:after {
+    content: "";
+}
+
+.feed-title {
+    font-size: 49px;
+    font-family: "Open Sans";
+    color: rgb(34, 31, 31);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 0.776;
+    margin-bottom: 50px;
+}
+
+
