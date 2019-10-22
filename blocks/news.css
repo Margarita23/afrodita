@@ -51,7 +51,7 @@
 .content-list__desc {
     margin: 0px 0px 0px 20px;
     font-size: 14px;
-    font-family: "Roboto";
+    font-family: "Open Sans";
     line-height: 1.5;
     max-width: 620px;
     color: #221f1f;
@@ -64,6 +64,7 @@
     font-weight: bold;
     text-transform: uppercase;
     line-height: 1.75;
+    letter-spacing: 2px;
 }
 
 .news__top--grey {

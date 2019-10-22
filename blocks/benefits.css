@@ -54,10 +54,11 @@
 }
 
 .benefits-list__title {
-    font-size: 12px;
+    font-size: 14px;
     font-family: "Open Sans";
     color: rgb(255, 255, 255);
     text-transform: uppercase;
+    letter-spacing: 4px;
     margin-bottom: 30px;
 }
 
@@ -72,4 +73,10 @@
 .benefits-list__desc ul {
     text-align: start;
     padding: 0px 25px;
+}
+
+.benefits-list__desc li:before {
+    content: "\00B7";
+    display: inline-block;
+    margin-right: 26px;
 }
