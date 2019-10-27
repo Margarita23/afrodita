@@ -9,8 +9,8 @@
 .schedule__info {
     display: none;
     position: absolute;
-    width: 180px;
-    background-image: url(../assets/images/schedule_back.png);
+    min-width: 180px;
+    background: url(../assets/images/schedule_back.png) no-repeat center center/100% 100%;
     padding: 38px 18px 19px 35px;
     text-align: left;
 }
