@@ -1,10 +1,11 @@
 .logo {
-    display: inline-block;
+    font-size: 19px;
     color: rgb(248, 149, 19);
     font-family: 'GoraFree', sans-serif;
+    letter-spacing: 1px;
 }
 
 .banner {
     text-align: center;
-    margin-bottom: 58px;
+    margin-bottom: 53px;
 }

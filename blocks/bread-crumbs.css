@@ -1,7 +1,7 @@
 .bread-crumbs {
     display: flex;
     text-align: left;
-    margin-bottom: 26px;
+    margin: 0px 0px 11px 3px;
 }
 
 .bread-crumbs__link{
@@ -9,8 +9,8 @@
     text-decoration: underline;
     font-size: 14px;
     font-family: "Open Sans";
+    font-weight: 300;
     font-style: italic;
-    line-height: 1.286;
 }
 
 .bread-crumbs__link:after {

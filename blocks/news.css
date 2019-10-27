@@ -1,11 +1,6 @@
-.news__title {
-    font-size: 49px;
-    font-family: "Open Sans";
+.news .title {
     color: rgb(34, 31, 31);
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-bottom: 80px;
-    text-align: center;
+    margin-bottom: 78px;
 }
 
 .news__container {
@@ -13,11 +8,13 @@
     justify-content: space-between;
 }
 
+.content-list {
+    margin-bottom: 20px;
+}
+
 .content-list__item {
     display: flex;
-    margin: 0px 20px 30px 0px;
-    flex-wrap: wrap;
-    padding-bottom: 30px;
+    margin: 0px 0px 29px 0px;
     border-bottom: 2px solid rgb(245, 245, 245);
 }
 
@@ -26,11 +23,12 @@
 }
 
 .content-list__avatar {
+    flex-shrink: 0;
     width: 160px;
     height: 160px;
-    margin-left: 20px;
     border-radius: 50%;
     overflow: hidden;
+    margin-bottom: 31px;
 }
 
 .content-list__image {
@@ -39,40 +37,70 @@
     height: 100%
 }
 
+.content-list__desc {
+    font-family: Roboto;
+    margin: 0px 0px 0px 20px;
+    font-size: 18px;
+    color: #221f1f;
+    line-height: 21px;
+}
+
 .content-list__desc h6 {
-    font-weight: lighter;
-    color: rgb(101, 100, 100);
+    color: #656464;
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 3px;
 }
 
 .content-list__desc h5 {
-    font-size: 16px;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 9px;
 }
 
-.content-list__desc {
-    margin: 0px 0px 0px 20px;
-    font-size: 14px;
-    font-family: "Open Sans";
-    line-height: 1.5;
-    max-width: 620px;
+.content-list__desc p {
+    line-height: 30px;
+    font-weight: 300;
+}
+
+.news__top {
+    margin-left: 24px;
+}
+
+.news__top--black, .news__top--grey {
     color: #221f1f;
-}
-
-.news__top--text, .news__top--grey {
-    font-size: 12px;
     font-family: "Open Sans";
-    color: rgb(34, 31, 31);
-    font-weight: bold;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 22px;
     text-transform: uppercase;
-    line-height: 1.75;
-    letter-spacing: 2px;
+    letter-spacing: 2.5px;
 }
 
 .news__top--grey {
     color: #656464;
-    margin-bottom: 22px;
+    margin-bottom: 16px;
 }
 
 .top-list__item {
-    margin-right: 18px;
-    margin-bottom: 11px;
+    margin-bottom: 17px;
+}
+
+.top-list__item .link {
+    display: inline-block;
+}
+
+.top-list__item:first-child>.link img {
+    height: 120px;
+}
+
+.top-list__item>.link img {
+    opacity: 0.6;
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+}
+
+.top-list__item>.link img:hover {
+    opacity: 1;
 }

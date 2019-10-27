@@ -10,25 +10,31 @@
   <body>
     <div class="wrapper">
       <div class="wrapper__content">
-        <header class="main-header">
+        <header class="main-header main-page">
           <div class="container">
-            <a class="logo" href="index.html">афродита</a>
-            <nav class="menu">
-              <ul>
-                <li>
-                  <a class="menu__item menu__item--main" href="index.html">главная</a>
-                </li>
-                <li>
-                  <a class="menu__item menu__item--feed" href="feed.html">отзывы</a>
-                </li>
-                <li>
-                  <a class="menu__item menu__item--service" href="service.html">услуги</a>
-                </li>
-              </ul>
-            </nav>
-            <div class="contact">
-              <a href="#" class="contact__phone">8(800)00-392-10</a>
-              <a href="#" class="contact__schedule">График работы</a>
+            <div class="header__column">
+              <a class="logo" href="index.html">афродита</a>
+            </div>
+            <div class="header__column">
+              <nav class="menu">
+                <ul>
+                  <li>
+                    <a class="menu__item menu__item--main" href="index.html">главная</a>
+                  </li>
+                  <li>
+                    <a class="menu__item menu__item--feed" href="feed.html">отзывы</a>
+                  </li>
+                  <li>
+                    <a class="menu__item menu__item--service" href="service.html">услуги</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="header__column">
+              <div class="contact">
+                <a href="#" class="contact__phone">8 (800) 00-392-10</a>
+                <a href="#" class="contact__schedule">График работы</a>
+              </div>
             </div>
           </div>
         </header>
@@ -93,7 +99,7 @@
                 </div>
               </li>
             </ul>
-            <div class="pagination">
+            <div class="pagination feed-page">
               Страница 1 из 7
               <a href="#" class="pagination--back"></a>
               <ul class="pagination-list">
@@ -140,7 +146,7 @@
                 <div class="form__row">
                   <label class="form__block">
                     <div class="form__block-title">Ваше имя</div>
-                    <input type="text" class="form__input" placeholder="Маргарита">
+                    <input type="text" class="form__input" placeholder="Андрей">
                   </label>
                   <label class="form__block">
                     <div class="form__block-title">Ссылка на профиль VK</div>
@@ -150,15 +156,31 @@
                 <div class="form__row">
                   <label class="form__block">
                     <div class="form__block-title">Текст отзыва</div>
-                    <textarea type="text" class="form__input form__input--textarea" placeholder="Введите ваш отзыв..."></textarea>
+                    <textarea type="text" class="form__input form__input--textarea" placeholder="Мне понравилось..."></textarea>
                   </label>
                 </div>
                 <div class="form__row">
                   <div class="form__question">
-                    <div class="form__block-title">Отображать фото в отзыве?</div>
+                    <div class="form__block-title form__block-title--radio">Отображать фото в отзыве?</div>
                     <div class="form__radios">
-                      <input type="radio" name="yes" value="male">Да
-                      <input type="radio" name="no" value="male">Нет
+                      <label for="radio__label">
+                        <input type="radio" name="is-photo" class="form__quastion-photo" id="yes-photo" checked>
+                        <div class="form__radio--empty">
+                          <div class="form__radio--checked"></div>
+                        </div>
+                        <div class="radio__text">
+                          Да
+                        </div>
+                      </label>
+                      <label for="radio__label">
+                        <input type="radio" name="is-photo" class="form__quastion-photo" id="no-photo">
+                        <div class="form__radio--empty">
+                          <div class="form__radio--checked"></div>
+                        </div>
+                        <div class="radio__text">
+                          Нет
+                        </div>
+                      </label>
                     </div>
                   </div>
                   <button name="gender" type="submit" class="form__button">Отправить</button>
@@ -169,33 +191,39 @@
         </div>
       </div>
 
-      <footer>
+      <footer class="footer">
         <div class="container">
-          <div class="info">
-            <p>Сделано с любовью и старанием на курсе &#171;HTML + CSS&#187; в
-              <a href="http://loftschool.com" class="info__company">LoftSchool</a>. Автор работы: <a href="#" class="info__author">Андрюхина Маргарита</a>
-            </p>
+          <div class="footer__col">
+            <div class="info">
+              <p>Сделано с любовью и старанием на курсе &#171;HTML + CSS&#187; в
+              <a href="http://loftschool.com" class="info__company">LoftSchool</a>. </br>Автор работы: <a href="#" class="info__author">Андрюхина Маргарита</a>
+              </p>
+            </div>
           </div>
-          <a class="footer__logo" href="index.html">афродита</a>
-          <div class="social-networks">
-            <p class="social-networks__text"><b>Наши социальные сети</b></p>
-            <ul class="social-networks__list">
-              <li class="social-networks__item vk">
-                <a href="#" class="link"></a>
-              </li>
-              <li class="social-networks__item fb">
-                <a href="#" class="link"></a>
-              </li>
-              <li class="social-networks__item google">
-                <a href="#" class="link"></a>
-              </li>
-              <li class="social-networks__item twitter">
-                <a href="#" class="link"></a>
-              </li>
-              <li class="social-networks__item mail">
-                <a href="#" class="link"></a>
-              </li>
-            </ul>
+          <div class="footer__col footer__col--center">
+            <a class="logo" href="index.html">афродита</a>
+          </div>
+          <div class="footer__col footer__col--right">
+            <div class="social-networks">
+              <p class="social-networks__text"><b>Наши социальные сети</b></p>
+              <ul class="social-networks__list">
+                <li class="social-networks__item vk">
+                  <a href="#" class="link"></a>
+                </li>
+                <li class="social-networks__item fb">
+                  <a href="#" class="link"></a>
+                </li>
+                <li class="social-networks__item google">
+                  <a href="#" class="link"></a>
+                </li>
+                <li class="social-networks__item twitter">
+                  <a href="#" class="link"></a>
+                </li>
+                <li class="social-networks__item mail">
+                  <a href="#" class="link"></a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </footer>

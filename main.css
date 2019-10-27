@@ -15,6 +15,7 @@
 
 @import url('/index.css');
 @import url('/feed.css');
+@import url('/preview.css');
 
 @import url('/blocks/feed-page/feed-content.css');
 @import url('/blocks/feed-page/additional-info.css');

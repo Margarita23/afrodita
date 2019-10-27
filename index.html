@@ -10,25 +10,31 @@
 <body>
   <div class="wrapper">
     <div class="wrapper__content">
-      <header class="main-header">
+      <header class="main-header main-page">
         <div class="container">
-          <a class="logo" href="#">афродита</a>
-          <nav class="menu">
-            <ul>
-              <li>
-                <a class="menu__item menu__item--main">главная</a>
-              </li>
-              <li>
-                <a class="menu__item menu__item--feed" href="feed.html">отзывы</a>
-              </li>
-              <li>
-                <a class="menu__item menu__item--service" href="service.html">услуги</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="contact">
-            <a href="#" class="contact__phone">8(800)00-392-10</a>
-            <a href="#" class="contact__schedule">График работы</a>
+          <div class="header__column">
+            <a class="logo" href="#">афродита</a>
+          </div>
+          <div class="header__column">
+            <nav class="menu">
+              <ul>
+                <li>
+                  <a class="menu__item menu__item--main" href="#">главная</a>
+                </li>
+                <li>
+                  <a class="menu__item menu__item--feed" href="feed.html">отзывы</a>
+                </li>
+                <li>
+                  <a class="menu__item menu__item--service" href="service.html">услуги</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header__column">
+            <div class="contact">
+              <a href="#" class="contact__phone">8 (800) 00-392-10</a>
+              <a href="#" class="contact__schedule">График работы</a>
+            </div>
           </div>
         </div>
       </header>
@@ -38,7 +44,7 @@
         </div>
       </div>
       <section class="benefits">
-        <h2 class="benefits__title">особенности</h2>
+        <h2 class="title">особенности</h2>
         <div class="container">
           <ul class="benefit-list">
             <li class="benefit-list__item">
@@ -82,7 +88,7 @@
       </section>
       <div class="container">
         <section class="news">
-          <h2 class="news__title">последние новости</h2>
+          <h2 class="title">последние новости</h2>
           <div class="news__container">
             <ul class="content-list">
               <li class="content-list__item">
@@ -95,13 +101,7 @@
                   <p>Вдыхание одного литра кислорода эквивалентно &#171;сжиганию&#187; 
                   5 калорий, однако в минуту при самом высоком темпе движений атлет способен
                   вдохнуть не более 3-4 литров кислорода. Это крайне важно для каждого начинающего атлета.</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde vel tempora est, odit numquam, nulla magni neque ea ratione aliquid asperiores? Dolorem velit sunt commodi quos, suscipit aliquam molestias fugit!</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde vel tempora est, odit numquam, nulla magni neque ea ratione aliquid asperiores? Dolorem velit sunt commodi quos, suscipit aliquam molestias fugit!</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde vel tempora est, odit numquam, nulla magni neque ea ratione aliquid asperiores? Dolorem velit sunt commodi quos, suscipit aliquam molestias fugit!</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde vel tempora est, odit numquam, nulla magni neque ea ratione aliquid asperiores? Dolorem velit sunt commodi quos, suscipit aliquam molestias fugit!</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde vel tempora est, odit numquam, nulla magni neque ea ratione aliquid asperiores? Dolorem velit sunt commodi quos, suscipit aliquam molestias fugit!</p>
-  
-              </div>
+                </div>
               </li>
               <li class="content-list__item">
                 <div class="content-list__avatar">
@@ -127,32 +127,34 @@
               </li>
             </ul>
             <div class="news__top">
-              <div class="news__top--text">топ новостей</div>
+              <div class="news__top--black">топ новостей</div>
               <div class="news__top--grey">за сентябрь</div>
               <ul class="top-list">
                 <li class="top-list__item">
                   <a href="#" class="link">
-                    <img src="./assets/images/top-news/top-new-one.png" alt="Картинка топ новости">
+                    <img src="./assets/images/top-news/top-one.jpg" alt="Картинка топ новости">
                   </a>
                 </li>
                 <li class="top-list__item">
                   <a href="#" class="link">
-                    <img src="./assets/images/top-news/top-new-two.png" alt="Картинка топ новости">
+                    <img src="./assets/images/top-news/top-two.jpg" alt="Картинка топ новости">
                   </a>
                 </li>
                 <li class="top-list__item">
                   <a href="#" class="link">
-                    <img src="./assets/images/top-news/top-new-three.png" alt="Картинка топ новости">
+                    <img src="./assets/images/top-news/top-three.jpg" alt="Картинка топ новости">
                   </a>
                 </li>
               </ul>
             </div>
           </div>
           <div class="pagination">
-            Страница 1 из 7
+            <div class="pagination--start-text">
+              Страница 1 из 7
+            </div>
             <a href="#" class="pagination--back"></a>
             <ul class="pagination-list">
-              <li class="pagination__item">
+              <li class="pagination__item pagination__item--active">
                 <a href="#" class="link">1</a>
               </li>
               <li class="pagination__item">
@@ -179,33 +181,39 @@
         </section>
       </div>
     </div>
-    <footer>
+    <footer class="footer">
       <div class="container">
-        <div class="info">
-          <p>Сделано с любовью и старанием на курсе &#171;HTML + CSS&#187; в
-          <a href="http://loftschool.com" class="info__company">LoftSchool</a>. Автор работы: <a href="#" class="info__author">Андрюхина Маргарита</a>
-          </p>
+        <div class="footer__col">
+          <div class="info">
+            <p>Сделано с любовью и старанием на курсе &#171;HTML + CSS&#187; в
+            <a href="http://loftschool.com" class="info__company">LoftSchool</a>. Автор работы: <a href="#" class="info__author">Андрюхина Маргарита</a>
+            </p>
+          </div>
         </div>
-        <a class="footer__logo" href="index.html">афродита</a>
-        <div class="social-networks">
-          <p class="social-networks__text"><b>Наши социальные сети</b></p>
-          <ul class="social-networks__list">
-            <li class="social-networks__item vk">
-              <a href="#" class="link"></a>
-            </li>
-            <li class="social-networks__item fb">
-              <a href="#" class="link"></a>
-            </li>
-            <li class="social-networks__item google">
-              <a href="#" class="link"></a>
-            </li>
-            <li class="social-networks__item twitter">
-              <a href="#" class="link"></a>
-            </li>
-            <li class="social-networks__item mail">
-              <a href="#" class="link"></a>
-            </li>
-          </ul>
+        <div class="footer__col footer__col--center">
+          <a class="logo" href="index.html">афродита</a>
+        </div>
+        <div class="footer__col footer__col--right">
+          <div class="social-networks">
+            <p class="social-networks__text"><b>Наши социальные сети</b></p>
+            <ul class="social-networks__list">
+              <li class="social-networks__item vk">
+                <a href="#" class="link"></a>
+              </li>
+              <li class="social-networks__item fb">
+                <a href="#" class="link"></a>
+              </li>
+              <li class="social-networks__item google">
+                <a href="#" class="link"></a>
+              </li>
+              <li class="social-networks__item twitter">
+                <a href="#" class="link"></a>
+              </li>
+              <li class="social-networks__item mail">
+                <a href="#" class="link"></a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </footer>

@@ -1,7 +1,11 @@
 .main-header {
     background-color: #131415;
-    margin-bottom: 80px;
+    margin-bottom: 75px;
     width: 100%;
+}
+
+.main-header.service-page {
+    margin-bottom: 37px;
 }
 
 .main-header .container {
@@ -10,6 +14,13 @@
     color: #fff;
     display: flex;
     align-items: center;
-    padding: 0px 20px 0px 20px;
     justify-content: space-between;
+}
+
+.header__column {
+    width: 33.3%;
+}
+
+.header__column:last-child {
+    text-align: end;
 }

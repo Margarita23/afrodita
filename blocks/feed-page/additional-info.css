@@ -1,14 +1,18 @@
 .additional-info {
-    font-size: 16px;
-    font-family: "Open Sans";
+    font-size: 18px;
+    font-weight: 300;
     color: rgb(255, 255, 255);
-    line-height: 1.667;
-    background: #131415 url('/assets/images/additional-info/add-info.png') no-repeat center center / cover;
     margin-bottom: 60px;
+    line-height: 30px;
+    background-color:  #131415 ;
+}
+
+.additional-info > .container {
+    background: #131415 url('/assets/images/additional-info/add-info.png') no-repeat center center;
 }
 
 .additional-info__contant {
-    padding: 30px 215px;
+    padding: 23px 196px 30px;
 }
 
 .additional-info__contant b {
