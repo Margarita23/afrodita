@@ -11,16 +11,22 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    
+}
+
+.logo-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    animation: logo-apear 2s;
 }
 
 .preview__image {
     display: inline-block;
     width: 225px;
     height: 272px;
+    margin-bottom: 56px;
 }
 
 .preview__link {
@@ -30,12 +36,46 @@
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 2.2px;
-    background-color: #f89513;
+    background-color: #131415;
     padding: 20px 27px;
     border-radius: 4px;
     margin-bottom: 28px;
 }
 
 .preview__link:hover {
-    background-color: #131415;
+    background-color: #f89513;
+    border: none;
+}
+
+@keyframes logo-apear {
+    0% {
+        opacity: 0;
+    }
+
+    40% {
+        transform: scale(0.4);
+        opacity: 0;
+    }
+
+    50% {
+        transform: scale(0.8);
+        opacity: 0.7;
+    }
+
+    70% {
+        transform: scale(1.2);
+    }
+
+    80% {
+        transform: scale(0.9);
+    }
+
+    90% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
